@@ -33,5 +33,17 @@ public class System extends CustomSettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
+        updateSmartPixelsPreference();
+    }
+
+    private void updateSmartPixelsPreference() {
+        PreferenceScreen prefSet = getPreferenceScreen();
+        boolean enableSmartPixels = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference smartPixels = findPreference(SMART_PIXELS);
+
+        if (!enableSmartPixels){
+            prefSet.removePreference(smartPixels);
+        }
     }
 }
