@@ -33,6 +33,7 @@ public class System extends CustomSettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
+        addCustomPreference(findPreference(ADVANCED_REBOOT), SECURE_TWO_STATE, STATE_ON);
         updateSmartPixelsPreference();
     }
 
