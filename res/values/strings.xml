@@ -20,6 +20,8 @@
 
     <string name="system_global_actions_category">Global actions</string>
 
+    <string name="lock_screen_security_category">Security</string>
+
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
     <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nSo, if you find a bug with any setting in CarbonFibers, please open up a ticket on Jira or contact a Carbon developer with the following.\n\n1. Blame kwoktopus\n2. Logcat and/or last_kmsg\n3. Kernel and mods used\n4. Useful information (subjective)\n\nIf you fail to report something with the above information, do not expect things to be fixed. Remember, we are not as perfect as Patrick, so we do miss things occasionally.</string>
@@ -79,5 +81,9 @@
     <string name="global_actions_flashlight">Flashlight</string>
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader</string>
+
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble PIN layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
 </resources>
