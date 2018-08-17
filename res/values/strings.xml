@@ -23,6 +23,8 @@
 
     <string name="lock_screen_security_category">Security</string>
 
+    <string name="buttons_software_category">Software buttons</string>
+
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
     <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nSo, if you find a bug with any setting in CarbonFibers, please open up a ticket on Jira or contact a Carbon developer with the following.\n\n1. Blame kwoktopus\n2. Logcat and/or last_kmsg\n3. Kernel and mods used\n4. Useful information (subjective)\n\nIf you fail to report something with the above information, do not expect things to be fixed. Remember, we are not as perfect as Patrick, so we do miss things occasionally.</string>
@@ -86,5 +88,13 @@
     <!-- Pin scramble -->
     <string name="unlock_scramble_pin_layout_title">Scramble PIN layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Status bar items</string>
+    <string name="status_bar_tuner_summary">Edit status bar icons and options</string>
+    <string name="navbar_tuner_title">Edit navigation bar</string>
+    <string name="navbar_tuner_summary">Edit the navigation bar layout and buttons</string>
+    <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
+    <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
 
 </resources>
