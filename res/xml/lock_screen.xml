@@ -20,6 +20,12 @@
     android:title="@string/lock_screen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <SwitchPreference
+        android:key="lockscreen_charging_current"
+        android:title="@string/lockscreen_charging_current_title"
+        android:summary="@string/lockscreen_charging_current_summary"
+        android:defaultValue="false" />
+
     <Preference
         android:title="@string/lock_screen_shortcuts_title"
         android:summary="@string/lock_screen_shortcuts_summary">

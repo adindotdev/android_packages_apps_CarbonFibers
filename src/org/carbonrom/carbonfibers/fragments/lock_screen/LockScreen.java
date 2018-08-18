@@ -23,6 +23,7 @@ import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 
 public class LockScreen extends CustomSettingsPreferenceFragment {
     private static final String TAG = "LockScreen";
+    private static final String LOCKSCREEN_CHARGING_CURRENT = "lockscreen_charging_current";
     private static final String LOCKSCREEN_PIN_SCRAMBLE_LAYOUT = "lockscreen_scramble_pin_layout";
 
     @Override
@@ -30,6 +31,7 @@ public class LockScreen extends CustomSettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.lock_screen);
+        addCustomPreference(findPreference(LOCKSCREEN_CHARGING_CURRENT), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(LOCKSCREEN_PIN_SCRAMBLE_LAYOUT), SYSTEM_TWO_STATE, STATE_OFF);
     }
 }
