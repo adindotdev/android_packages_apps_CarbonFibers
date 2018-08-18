@@ -21,6 +21,8 @@
 
     <string name="system_global_actions_category">Global actions</string>
 
+    <string name="status_bar_clock_category">Clock</string>
+
     <string name="lock_screen_security_category">Security</string>
 
     <string name="buttons_software_category">Software buttons</string>
@@ -116,5 +118,31 @@
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Immediately unlock on correct PIN/Password entry</string>
+
+    <!-- Status bar clock -->
+    <string name="status_bar_clock">Show clock</string>
+    <string name="clock_seconds_display">Show seconds</string>
+    <string name="status_bar_clock_style_title">Clock style</string>
+    <string name="status_bar_clock_style_right">Right</string>
+    <string name="status_bar_clock_style_center">Center</string>
+    <string name="status_bar_clock_style_left">Left</string>
+    <string name="status_bar_am_pm_title">Show AM/PM</string>
+    <string name="status_bar_am_pm_info">Not available</string>
+    <string name="status_bar_am_pm_hidden">Hidden</string>
+    <string name="status_bar_am_pm_small">Small size</string>
+    <string name="status_bar_am_pm_normal">Normal size</string>
+    <string name="clock_date_display">Show date</string>
+    <string name="clock_date_display_summary">Display custom date</string>
+    <string name="clock_date_display_none">Hidden</string>
+    <string name="clock_date_display_small">Small size</string>
+    <string name="clock_date_display_normal">Normal size</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Format: MM/DD/YY</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
 
 </resources>
