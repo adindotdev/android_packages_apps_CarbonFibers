@@ -150,4 +150,7 @@
     <string name="clock_date_string_edittext_title">Format: MM/DD/YY</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
 
+    <!-- Charging options -->
+    <string name="vibration_on_charge_state_changed_title">Vibrate on plug/unplug</string>
+
 </resources>

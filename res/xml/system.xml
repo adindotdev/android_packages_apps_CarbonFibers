@@ -43,4 +43,14 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="system_charging_category">
+
+        <SwitchPreference
+            android:key="vibration_on_charge_state_changed"
+            android:title="@string/vibration_on_charge_state_changed_title"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
