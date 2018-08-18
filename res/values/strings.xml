@@ -114,4 +114,8 @@
     <string name="lockscreen_charging_current_title">Display charging info</string>
     <string name="lockscreen_charging_current_summary">Show the charging current and voltage</string>
 
+    <!-- Disable QS on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Disable quick settings</string>
+    <string name="block_on_secure_keyguard_summary">Disables quick settings in secure lock screen</string>
+
 </resources>
