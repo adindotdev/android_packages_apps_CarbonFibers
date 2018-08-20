@@ -23,6 +23,12 @@
     <PreferenceCategory
         android:title="@string/buttons_software_category">
 
+        <SwitchPreference
+            android:key="pixel_nav_animation"
+            android:title="@string/pixel_navbar_anim_title"
+            android:summary="@string/pixel_navbar_anim_summary"
+            android:defaultValue="true" />
+
         <Preference
             android:title="@string/navbar_tuner_title"
             android:summary="@string/navbar_tuner_summary">

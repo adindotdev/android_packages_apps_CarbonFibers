@@ -199,4 +199,8 @@
     <string name="battery_percent_outside">Show beside icon</string>
     <string name="battery_percent_inside">Show inside icon</string>
 
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Enable Pixel animation</string>
+    <string name="pixel_navbar_anim_summary">Display the Pixel home button animation</string>
+
 </resources>

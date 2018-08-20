@@ -28,6 +28,7 @@ import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 
 public class Buttons extends CustomSettingsPreferenceFragment {
     private static final String TAG = "Buttons";
+    private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
@@ -36,6 +37,7 @@ public class Buttons extends CustomSettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.buttons);
+        addCustomPreference(findPreference(PIXEL_NAV_ANIMATION), SYSTEM_TWO_STATE, STATE_ON);
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
 
         PreferenceScreen prefSet = getPreferenceScreen();
