@@ -30,6 +30,8 @@ import android.widget.EditText;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
+import com.android.settings.carbon.SystemSettingListPreference;
+import com.android.settingslib.graph.BatteryMeterDrawableBase;
 
 import java.util.Date;
 
@@ -43,6 +45,8 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
     private static final String STATUS_BAR_CLOCK_DATE_DISPLAY = "clock_date_display";
     private static final String STATUS_BAR_CLOCK_DATE_STYLE = "clock_date_style";
     private static final String STATUS_BAR_CLOCK_DATE_FORMAT = "clock_date_format";
+    private static final String STATUS_BAR_BATTERY_ICON = "status_bar_battery_icon";
+    private static final String SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     private static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
     private static final int CUSTOM_CLOCK_DATE_FORMAT_INDEX = 18;
@@ -54,6 +58,8 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
     private ListPreference mClockDateDisplay;
     private ListPreference mClockDateStyle;
     private ListPreference mClockDateFormat;
+    private SystemSettingListPreference mBatteryIcon;
+    private SystemSettingListPreference mBatteryPercent;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -70,6 +76,11 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
         mClockDateDisplay = (ListPreference) findPreference(STATUS_BAR_CLOCK_DATE_DISPLAY);
         mClockDateStyle = (ListPreference) findPreference(STATUS_BAR_CLOCK_DATE_STYLE);
         mClockDateFormat = (ListPreference) findPreference(STATUS_BAR_CLOCK_DATE_FORMAT);
+
+        mBatteryIcon = (SystemSettingListPreference) findPreference(STATUS_BAR_BATTERY_ICON);
+        mBatteryPercent = (SystemSettingListPreference) findPreference(SHOW_BATTERY_PERCENT);
+
+        mBatteryIcon.setOnPreferenceChangeListener(this);
 
         mStatusBarClockShow.setOnPreferenceChangeListener(this);
 
@@ -204,6 +215,10 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
                         Settings.System.STATUSBAR_CLOCK_DATE_FORMAT, (String) newValue);
                 }
             }
+            return true;
+        } else if (mBatteryIcon == preference) {
+            int batteryIcon = Integer.valueOf((String) newValue);
+            mBatteryPercent.setEnabled(batteryIcon != BatteryMeterDrawableBase.BATTERY_ICON_TEXT);
             return true;
         }
         return false;

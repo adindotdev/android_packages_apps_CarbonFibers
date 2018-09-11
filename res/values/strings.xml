@@ -182,6 +182,7 @@
     <string name="status_bar_battery_icon_title">Battery icon</string>
     <string name="status_bar_battery_icon_hidden">Hidden</string>
     <string name="status_bar_battery_icon_portrait">Portrait</string>
+    <string name="status_bar_battery_icon_text">Text</string>
 
     <!-- Battery percent -->
     <string name="status_bar_battery_percent_title">Battery percent</string>
