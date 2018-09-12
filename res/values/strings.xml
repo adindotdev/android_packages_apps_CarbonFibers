@@ -184,6 +184,7 @@
     <string name="status_bar_battery_icon_portrait">Portrait</string>
     <string name="status_bar_battery_icon_landscape">Landscape</string>
     <string name="status_bar_battery_icon_circle">Circle</string>
+    <string name="status_bar_battery_icon_dotted_circle">Dotted circle</string>
     <string name="status_bar_battery_icon_text">Text</string>
 
     <!-- Battery percent -->
