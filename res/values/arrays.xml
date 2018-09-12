@@ -178,6 +178,8 @@
     <string-array name="status_bar_battery_icon_entries" translatable="false">
         <item>@string/status_bar_battery_icon_hidden</item>
         <item>@string/status_bar_battery_icon_portrait</item>
+        <item>@string/status_bar_battery_icon_landscape</item>
+        <item>@string/status_bar_battery_icon_circle</item>
         <item>@string/status_bar_battery_icon_text</item>
     </string-array>
 
@@ -185,17 +187,21 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 
     <!-- Battery percent -->
     <string-array name="status_bar_battery_percent_entries" translatable="false">
         <item>@string/status_bar_battery_percent_hidden</item>
         <item>@string/status_bar_battery_percent_beside</item>
+        <item>@string/status_bar_battery_percent_inside</item>
     </string-array>
 
     <string-array name="status_bar_battery_percent_values" translatable="false">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
     </string-array>
 
 </resources>
